@@ -1,0 +1,63 @@
+body{
+    
+    font-family: "Smooch Sans", sans-serif;
+    background:#1d232b;
+}
+
+
+
+.line{
+    width:100%;
+    height:2px;
+    background:#6289c4;
+}
+
+h1{
+    margin-bottom: 30px;
+    color: #6289c4;
+    text-align: center;
+}
+
+
+
+.art-btn{
+    margin-left: 100px; 
+    position:relative;
+    display:inline-block;
+
+    padding:15px 30px;
+
+    background:#27304a;
+    color:#7e9fd0;
+
+    text-decoration:none;
+}
+
+
+
+.arts{
+    
+    position:absolute;
+    top:120%;
+    left:-100%;
+
+    display:flex;
+    gap:10px;
+
+    opacity:0;
+    transform:translateY(20px);
+
+    transition:0.4s;
+}
+
+
+.arts img{
+    width:120px;
+    border-radius:10px;
+}
+
+.art-btn:hover .arts{
+    
+    opacity:1;
+    transform:translateY(0);
+}
