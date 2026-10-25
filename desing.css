@@ -93,3 +93,34 @@ h1{
     }
 
 }
+
+
+.video-btn{
+    display:inline-block;
+    background:#27304a;
+    color:#7e9fd0;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.videos-preview{
+    display:flex;
+    gap:10px;
+    opacity:0;
+    transition:0.4s;
+}
+
+.video-btn:hover + .videos-preview{
+    opacity:1;
+}
+
+.videos-preview img{
+    width:20vw;
+    max-width:120px;
+    min-width:60px;
+    height:auto;
+    border-radius:10px;
+}
