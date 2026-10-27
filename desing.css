@@ -95,7 +95,9 @@ h1{
 }
 
 
-.video-btn{
+.video-btn,
+.pixelart-btn,
+.portfolio-link{
     display:inline-block;
     background:#27304a;
     color:#7e9fd0;
@@ -121,6 +123,57 @@ h1{
     width:20vw;
     max-width:120px;
     min-width:60px;
+    height:auto;
+    border-radius:10px;
+}
+
+.pixelart-gallery{
+    padding:30px;
+    text-align:center;
+}
+
+.pixelart-gallery img{
+    display:block;
+    width:auto;
+    max-width:100%;
+    max-height:75vh;
+    margin:20px auto 0;
+    border-radius:10px;
+}
+
+.pixelart-preview{
+    display:flex;
+    gap:10px;
+    opacity:0;
+    transition:opacity 0.4s;
+}
+
+.pixelart-btn:hover + .pixelart-preview,
+.pixelart-btn:focus-visible + .pixelart-preview{
+    opacity:1;
+}
+
+.pixelart-preview img{
+    width:20vw;
+    max-width:120px;
+    min-width:60px;
+    height:auto;
+    border-radius:10px;
+}
+
+.gallery-page{
+    padding:30px;
+}
+
+.gallery-page > div{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.gallery-page img{
+    max-width:min(100%, 600px);
     height:auto;
     border-radius:10px;
 }
